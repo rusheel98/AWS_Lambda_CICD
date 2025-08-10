@@ -24,7 +24,7 @@ jobs:
         run: |
           python --version
           sudo apt-get update
-          sudo apt-get install -y python3.11-venv python3-pip jq zip
+          sudo apt-get install -y python3-venv python3-pip jq zip
           pip3 install boto3
 
       - name: Set environment variables
