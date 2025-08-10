@@ -1,16 +1,16 @@
 import os
-import pandas as pd
+# import pandas as pd
 import requests
 
 def lambda_handler(event, context):
 
-    print("Deployment via CICD process !! - 08/10/2025 3:33 PM")
+    print("Deployment via CICD process !! - 08/10/2025 4:15 PM")
     response = requests.get("https://jsonplaceholder.typicode.com/posts")
     data = response.json()
     
 
-    df = pd.DataFrame(data)
-    print(df.head())
+    # df = pd.DataFrame(data)
+    # print(df.head())
 
 
     print("Environment Variables:")
